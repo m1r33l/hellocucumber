@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="0" failures="0" name="hellocucumber.RunCucumberTest" time="0" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="hellocucumber.RunCucumberTest" time="0.143" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.9+7-LTS"/>
@@ -63,4 +63,56 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+  <testcase classname="Is it Friday yet?" name="Sunday isn&apos;t Friday" time="0.143">
+    <error message="The step &quot;today is Sunday&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Given(&quot;today is Sunday&quot;)
+public void today_is_sunday() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When(&quot;I ask whether it&apos;s Friday yet&quot;)
+public void i_ask_whether_it_s_friday_yet() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should be told {string}&quot;)
+public void i_should_be_told(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;today is Sunday&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Given(&quot;today is Sunday&quot;)
+public void today_is_sunday() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When(&quot;I ask whether it&apos;s Friday yet&quot;)
+public void i_ask_whether_it_s_friday_yet() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I should be told {string}&quot;)
+public void i_should_be_told(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario: Sunday isn&apos;t Friday        &amp;#27;[90m# hellocucumber/is_it_friday_yet.feature:4&amp;#27;[0m
+  &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mtoday is Sunday&amp;#27;[0m              &amp;#27;[90m# null&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI ask whether it&apos;s Friday yet&amp;#27;[0m &amp;#27;[90m# null&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI should be told &quot;Nope&quot;&amp;#27;[0m       &amp;#27;[90m# null&amp;#27;[0m
+</system-out>
+  </testcase>
 </testsuite>
